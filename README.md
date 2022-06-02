@@ -1,2 +1,1 @@
-# alx-low_level_programming
-learning c programming
+This contains low level programming exercices.
