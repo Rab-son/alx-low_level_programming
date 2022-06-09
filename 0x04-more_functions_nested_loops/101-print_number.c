@@ -1,38 +1,35 @@
-#include "holberton.h"
-/**
-* print_number - print the number
-* @n: the character
-*
-*/
+#include "main.h"
 
+/**
+ * print_number - prints an integer.
+ * @n: input integer.
+ * Return: no return.
+ */
 void print_number(int n)
 {
-	unsigned int sig, cont, num, dig, div, x;
-
-	cont = 1;
-	dig = 1;
+	unsigned int m, d, count;
 
 	if (n < 0)
 	{
-		_putchar('-');
-		sig = -n;
+		_putchar(45);
+		m = n * -1;
 	}
 	else
 	{
-		sig = n;
+		m = n;
 	}
-	num = sig;
-	while (num > 9)
+
+	d = m;
+	count = 1;
+
+	while (d > 9)
 	{
-		num = num / 10;
-		cont++;
-		dig = dig * 10;
+		d /= 10;
+		count *= 10;
 	}
-	for (x = 1; x <= cont; x++)
+
+	for (; count >= 1; count /= 10)
 	{
-	div = sig / dig;
-	sig = sig % dig;
-	dig = dig / 10;
-	_putchar (div + '0');
+		_putchar(((m / count) % 10) + 48);
 	}
 }
