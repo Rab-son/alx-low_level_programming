@@ -1,11 +1,9 @@
 #include "lists.h"
+
 /**
- * dlistint_len - returns the number of elements in
- * a double linked list
+ * main - check the code
  *
- * @h: head of the list
- * Return: the number of nodes
- * 
+ * Return: Always EXIT_SUCCESS.
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
