@@ -1,8 +1,12 @@
 #include "lists.h"
+
 /**
- * main - check the code
+ * dlistint_len - returns the number of elements in
+ * a double linked list
  *
- * Return: Always EXIT_SUCCESS.
+ * @h: head of the list
+ * Return: the number of nodes
+ * Author: Alx School
  */
 size_t dlistint_len(const dlistint_t *h)
 {
