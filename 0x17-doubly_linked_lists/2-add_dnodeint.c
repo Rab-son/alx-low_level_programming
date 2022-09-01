@@ -4,6 +4,7 @@
  * main - check the code
  *
  * Return: Always EXIT_SUCCESS.
+ * Author: AlX School
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
