@@ -12,7 +12,7 @@
  *
  * Description: doubly linked list node structure
  * for Holberton project
- * Author: Martins Akhivbareme
+ * 
  */
 typedef struct dlistint_s
 {
